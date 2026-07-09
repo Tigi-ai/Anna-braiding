@@ -1,12 +1,12 @@
 <style>
-    /* ========== DESIGN SYSTEM: ELEGANT LUXURY ========== */
+    /* ========== DESIGN SYSTEM: ELEGANT DARK LUXURY ========== */
     :root {
         --luxury-gold: #d4af37;
-        --luxury-gradient: linear-gradient(135deg, #d4af37 0%, #fcd116 50%, #d4af37 100%);
-        --glass-bg: rgba(255, 255, 255, 0.03);
-        --glass-border: rgba(255, 255, 255, 0.1);
-        --deep-black: #050505;
-        --text-light: #f8f8f8;
+        --luxury-gold-dim: rgba(212, 175, 55, 0.2);
+        --deep-black: #0a0a0a; /* True black background */
+        --card-bg: #141414;    /* Slightly lighter than body for contrast */
+        --text-main: #e0e0e0;  /* Bright off-white for readability */
+        --text-muted: #888888; /* Soft grey for secondary text */
     }
     
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -14,107 +14,75 @@
 
     body {
         background-color: var(--deep-black);
-        color: var(--text-light);
+        color: var(--text-main);
         font-family: 'Outfit', sans-serif;
         line-height: 1.7;
     }
 
-    /* Subtle Animated Gold Border Top */
+    /* Decorative Top Band */
     .tilet-band {
-        height: 3px;
-        background: var(--luxury-gradient);
-        box-shadow: 0 0 15px var(--luxury-gold);
+        height: 4px;
+        background: linear-gradient(90deg, #da291c, #da291c 33%, #fcd116 33%, #fcd116 66%, #078930 66%, #078930);
     }
 
+    /* Typography */
     .salon-name {
         font-family: 'Cinzel', serif;
-        font-size: 4rem;
-        font-weight: 400;
-        letter-spacing: 12px;
-        color: #fff;
-        text-transform: uppercase;
-        margin-bottom: 5px;
+        font-size: 3.5rem;
+        letter-spacing: 8px;
+        color: var(--luxury-gold);
+        text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
     }
 
     .tagline {
         font-family: 'Playfair Display', serif;
         font-style: italic;
-        font-size: 1.5rem;
-        color: var(--luxury-gold);
-        letter-spacing: 2px;
-        margin-bottom: 40px;
+        color: var(--text-muted);
+        font-size: 1.3rem;
     }
 
-    /* Glassmorphism Cards */
+    /* Cards with High Contrast */
     .info-card, .heritage-intro, .pricing-container, .booking-form {
-        background: var(--glass-bg);
-        backdrop-filter: blur(10px);
-        border: 1px solid var(--glass-border);
-        border-radius: 16px;
-    }
-
-    /* Enhanced Gallery */
-    .style-card {
-        background: #111;
-        border-radius: 20px;
-        padding: 8px; /* Creates a frame effect */
-        transition: 0.5s ease;
-    }
-
-    .style-card:hover {
-        background: var(--luxury-gold);
-    }
-
-    .card-image-wrapper {
+        background: var(--card-bg);
+        border: 1px solid #222;
         border-radius: 12px;
-        height: 400px;
+        padding: 30px;
     }
 
-    /* Elegant Buttons */
+    /* Ensure text inside cards is bright */
+    .item-name, h3, .form-group label { color: #ffffff !important; }
+    .item-desc, .heritage-intro p { color: var(--text-muted); }
+
+    /* Button Styling */
     .book-btn {
-        background: var(--luxury-gradient);
+        background: var(--luxury-gold);
         color: #000;
-        font-weight: 800;
-        letter-spacing: 3px;
-        border-radius: 50px;
-        padding: 20px;
-        transition: 0.3s;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 8px;
+        border: none;
+        padding: 15px;
     }
 
-    .book-btn:hover {
-        transform: scale(1.02);
-        box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+    /* Input Fields */
+    input, select, textarea {
+        background: #1a1a1a !important;
+        border: 1px solid #333 !important;
+        color: #fff !important; /* Forces text to be white */
     }
 
-    /* Floating Button */
-    .floating-kakao {
-        background: #fee500;
-        color: #000;
-        border-radius: 12px;
-        padding: 18px 25px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        font-size: 0.9rem;
-    }
-
-    /* Section Headers */
+    /* Section Titles */
     .section-title {
+        color: var(--luxury-gold);
         font-family: 'Cinzel', serif;
-        font-size: 2.5rem;
-        color: #fff;
-        margin-bottom: 50px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
     }
 
     .section-title::after {
-        background: var(--luxury-gradient);
-        height: 3px;
-        width: 80px;
+        background: var(--luxury-gold);
+        height: 2px;
+        width: 50px;
+        margin: 10px auto;
     }
-
-    /* Typography Polish */
-    input, select, textarea {
-        background: rgba(255,255,255,0.05) !important;
-        border: 1px solid rgba(255,255,255,0.1) !important;
-    }
-
-    input:focus { border-color: var(--luxury-gold) !important; }
 </style>
