@@ -1,958 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Salina Hair Salon | Braiding Your Crown in Gangneung</title>
-  <meta name="description" content="Expert hair braiding services by Eva-Tigist at Salina Hair Salon in Gangneung. Specializing in traditional Ethiopian Albaso/Sheruba, box braids, twists, goddess braids, and premium protective styling. Book your crown today!">
-  <meta name="keywords" content="Salina Hair Salon, hair braiding Gangneung, Gangneung hair salon, African braiding Korea, box braids Korea, Eva-Tigist, Ethiopian braids, 강릉 머리땋기, 강릉 미용실, 강릉 땋은머리">
-  
-  <!-- Open Graph for sharing on KakaoTalk / Socials -->
-  <meta property="og:title" content="Salina Hair Salon | Braiding Your Crown">
-  <meta property="og:description" content="Expert braiding by Eva-Tigist in Gangneung. Albaso, Twists, Box Braids & more. Tap to view gallery and book!">
-  <meta property="og:image" content="assets/albaso_braids.png">
-  <meta property="og:type" content="website">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
-  
-  <style>
-    /* ========== DESIGN SYSTEM ========== */
+<style>
+    /* ========== DESIGN SYSTEM: ELEGANT LUXURY ========== */
     :root {
-      --luxury-gold: #d4af37;
-      --luxury-gold-dim: rgba(212, 175, 55, 0.15);
-      --deep-black: #0f0f0f;
-      --card-bg: #1a1a1a;
-      --text-light: #f5f5f5;
-      --text-muted: #a0a0a0;
+        --luxury-gold: #d4af37;
+        --luxury-gradient: linear-gradient(135deg, #d4af37 0%, #fcd116 50%, #d4af37 100%);
+        --glass-bg: rgba(255, 255, 255, 0.03);
+        --glass-border: rgba(255, 255, 255, 0.1);
+        --deep-black: #050505;
+        --text-light: #f8f8f8;
     }
     
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
 
     body {
-      background-color: var(--deep-black);
-      color: var(--text-light);
-      font-family: 'Outfit', sans-serif;
-      line-height: 1.6;
-      padding-bottom: 60px;
+        background-color: var(--deep-black);
+        color: var(--text-light);
+        font-family: 'Outfit', sans-serif;
+        line-height: 1.7;
     }
 
-    /* Ethiopian Top Accent Band */
+    /* Subtle Animated Gold Border Top */
     .tilet-band {
-      height: 6px;
-      background: linear-gradient(90deg, #da291c 0%, #da291c 33%, #fcd116 33%, #fcd116 66%, #078930 66%, #078930 100%);
-      width: 100%;
-    }
-
-    .flyer-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    /* ========== HEADER ========== */
-    .flyer-header {
-      text-align: center;
-      margin-bottom: 60px;
+        height: 3px;
+        background: var(--luxury-gradient);
+        box-shadow: 0 0 15px var(--luxury-gold);
     }
 
     .salon-name {
-      font-family: 'Cinzel', serif;
-      font-size: 3.5rem;
-      font-weight: 700;
-      letter-spacing: 6px;
-      color: var(--luxury-gold);
-      margin-bottom: 10px;
-      text-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+        font-family: 'Cinzel', serif;
+        font-size: 4rem;
+        font-weight: 400;
+        letter-spacing: 12px;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 5px;
     }
 
     .tagline {
-      font-family: 'Playfair Display', serif;
-      font-style: italic;
-      font-size: 1.4rem;
-      color: var(--text-muted);
-      margin-bottom: 30px;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-size: 1.5rem;
+        color: var(--luxury-gold);
+        letter-spacing: 2px;
+        margin-bottom: 40px;
     }
 
-    .contact-info {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
+    /* Glassmorphism Cards */
+    .info-card, .heritage-intro, .pricing-container, .booking-form {
+        background: var(--glass-bg);
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--glass-border);
+        border-radius: 16px;
     }
 
-    .info-card {
-      background: var(--card-bg);
-      border: 1px solid #2a2a2a;
-      padding: 15px 30px;
-      border-radius: 8px;
-      min-width: 250px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    }
-
-    .info-label {
-      display: block;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: var(--luxury-gold);
-      margin-bottom: 5px;
-    }
-
-    .info-value { font-size: 1.1rem; font-weight: 500; }
-
-    .highlight-kakao { border: 1px solid #fee500; }
-    
-    .link-value {
-      color: #fee500;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    /* ========== INTRODUCTION ========== */
-    .heritage-intro {
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto 70px auto;
-      background: linear-gradient(180deg, #161616 0%, #111111 100%);
-      padding: 40px;
-      border-radius: 12px;
-      border: 1px solid #222;
-    }
-
-    .heritage-intro h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-      color: #fff;
-    }
-
-    .heritage-intro p {
-      color: var(--text-muted);
-      font-size: 1.1rem;
-    }
-
-    /* ========== GALLERY GRID ========== */
-    .gallery-section { margin-bottom: 80px; }
-
-    .section-title {
-      font-family: 'Cinzel', serif;
-      text-align: center;
-      font-size: 2.2rem;
-      letter-spacing: 3px;
-      color: var(--luxury-gold);
-      margin-bottom: 40px;
-      position: relative;
-    }
-
-    .section-title::after {
-      content: '';
-      display: block;
-      width: 60px;
-      height: 2px;
-      background: var(--luxury-gold);
-      margin: 15px auto 0 auto;
-    }
-
-    .styles-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
-    }
-
+    /* Enhanced Gallery */
     .style-card {
-      background: var(--card-bg);
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid #222;
-      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      cursor: pointer;
+        background: #111;
+        border-radius: 20px;
+        padding: 8px; /* Creates a frame effect */
+        transition: 0.5s ease;
     }
 
     .style-card:hover {
-      transform: translateY(-10px);
-      border-color: var(--luxury-gold);
-      box-shadow: 0 15px 35px rgba(212, 175, 55, 0.15);
+        background: var(--luxury-gold);
     }
 
     .card-image-wrapper {
-      width: 100%;
-      height: 380px;
-      overflow: hidden;
-      background: #252525;
-      position: relative;
+        border-radius: 12px;
+        height: 400px;
     }
 
-    .card-image-wrapper::after {
-      content: '🔍 Tap to Enlarge';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(transparent, rgba(0,0,0,0.85));
-      color: #fff;
-      text-align: center;
-      padding: 30px 10px 12px;
-      font-size: 0.85rem;
-      letter-spacing: 1px;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    .style-card:hover .card-image-wrapper::after {
-      opacity: 1;
-    }
-
-    .gallery-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.6s ease;
-      cursor: zoom-in;
-    }
-
-    .style-card:hover .gallery-image {
-      transform: scale(1.06);
-    }
-
-    .card-info { padding: 25px; }
-
-    .card-info h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.4rem;
-      margin-bottom: 10px;
-      color: #fff;
-    }
-
-    .card-info p {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-    }
-
-    /* ========== LIGHTBOX ========== */
-    .lightbox-overlay {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      background: rgba(0, 0, 0, 0.95);
-      z-index: 10000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s ease;
-    }
-
-    .lightbox-overlay.active {
-      opacity: 1;
-      pointer-events: all;
-    }
-
-    .lightbox-overlay img {
-      max-width: 92%;
-      max-height: 85vh;
-      border-radius: 10px;
-      border: 2px solid var(--luxury-gold);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.8);
-      object-fit: contain;
-      transform: scale(0.9);
-      transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-
-    .lightbox-overlay.active img {
-      transform: scale(1);
-    }
-
-    .lightbox-caption {
-      position: absolute;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      color: #fff;
-      font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
-      text-align: center;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.8);
-    }
-
-    .lightbox-close {
-      position: absolute;
-      top: 20px; right: 25px;
-      background: none;
-      border: none;
-      color: #fff;
-      font-size: 2.5rem;
-      cursor: pointer;
-      transition: color 0.2s;
-      z-index: 10001;
-    }
-
-    .lightbox-close:hover { color: var(--luxury-gold); }
-
-    .lightbox-nav {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(255,255,255,0.1);
-      border: none;
-      color: #fff;
-      font-size: 2rem;
-      padding: 12px 18px;
-      cursor: pointer;
-      border-radius: 6px;
-      transition: all 0.2s;
-      z-index: 10001;
-    }
-
-    .lightbox-nav:hover {
-      background: var(--luxury-gold);
-      color: #000;
-    }
-
-    .lightbox-nav.prev { left: 15px; }
-    .lightbox-nav.next { right: 15px; }
-
-    /* ========== PRICING ========== */
-    .services-pricing { margin-bottom: 80px; }
-
-    .pricing-container {
-      background: #141414;
-      border: 1px solid #222;
-      border-radius: 12px;
-      padding: 20px 40px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    }
-
-    .pricing-item {
-      padding: 20px 0;
-      border-bottom: 1px solid #222;
-    }
-
-    .pricing-item:last-child { border-bottom: none; }
-
-    .item-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 8px;
-    }
-
-    .item-name { font-size: 1.2rem; font-weight: 600; color: #fff; }
-
-    .item-price {
-      color: var(--luxury-gold);
-      font-weight: 700;
-      font-size: 1.1rem;
-    }
-
-    .item-desc { color: var(--text-muted); font-size: 0.95rem; }
-
-    /* ========== BOOKING FORM ========== */
-    .interactive-booking {
-      max-width: 700px;
-      margin: 0 auto 60px auto;
-    }
-
-    .booking-note {
-      text-align: center;
-      color: var(--text-muted);
-      margin-bottom: 30px;
-      margin-top: -30px;
-    }
-
-    .booking-form {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      background: #141414;
-      padding: 40px;
-      border-radius: 16px;
-      border: 1px solid rgba(212, 175, 55, 0.2);
-      box-shadow: 0 15px 40px rgba(0,0,0,0.6);
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .span-2 { grid-column: span 2; }
-
-    .form-group label {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--luxury-gold);
-      margin-bottom: 8px;
-      font-weight: 500;
-    }
-
-    .form-group input, .form-group select, .form-group textarea {
-      background: #1f1f1f;
-      border: 1px solid #333;
-      color: #fff;
-      padding: 12px 15px;
-      border-radius: 6px;
-      font-family: 'Outfit', sans-serif;
-      font-size: 1rem;
-      transition: all 0.3s ease;
-    }
-
-    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
-      outline: none;
-      border-color: var(--luxury-gold);
-      box-shadow: 0 0 8px rgba(212,175,55,0.25);
-      background: #252525;
-    }
-
+    /* Elegant Buttons */
     .book-btn {
-      grid-column: span 2;
-      background: var(--luxury-gold);
-      color: #000;
-      font-weight: 700;
-      padding: 16px;
-      border-radius: 8px;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      font-family: 'Outfit', sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(212,175,55,0.3);
+        background: var(--luxury-gradient);
+        color: #000;
+        font-weight: 800;
+        letter-spacing: 3px;
+        border-radius: 50px;
+        padding: 20px;
+        transition: 0.3s;
     }
 
     .book-btn:hover {
-      background: #e8c547;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(212,175,55,0.4);
+        transform: scale(1.02);
+        box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
     }
 
-    .book-btn:disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
-      transform: none;
-    }
-
-    /* ========== THANK YOU CARD ========== */
-    .booking-thankyou {
-      display: none;
-      background: linear-gradient(135deg, #1a1a1a 0%, #141414 100%);
-      border: 2px solid var(--luxury-gold);
-      padding: 50px 30px;
-      border-radius: 16px;
-      text-align: center;
-      margin-top: 20px;
-      animation: fadeSlideUp 0.6s ease-out;
-    }
-
-    .booking-thankyou.show { display: block; }
-
-    .thankyou-crown { font-size: 60px; margin-bottom: 15px; }
-
-    .booking-thankyou h3 {
-      color: var(--luxury-gold);
-      font-size: 1.7rem;
-      margin-bottom: 12px;
-      font-family: 'Cinzel', serif;
-    }
-
-    .booking-thankyou p {
-      font-size: 1.05rem;
-      margin-bottom: 6px;
-      color: var(--text-muted);
-    }
-
-    .booking-thankyou .reset-btn {
-      margin-top: 25px;
-      background: transparent;
-      color: var(--luxury-gold);
-      border: 1px solid var(--luxury-gold);
-      padding: 12px 28px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.95rem;
-      transition: all 0.3s ease;
-    }
-
-    .booking-thankyou .reset-btn:hover {
-      background: var(--luxury-gold);
-      color: #000;
-    }
-
-    @keyframes fadeSlideUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ========== FLOATING KAKAO ========== */
+    /* Floating Button */
     .floating-kakao {
-      position: fixed;
-      bottom: 30px; right: 30px;
-      background: #fee500;
-      color: #3c1e1e;
-      padding: 15px 25px;
-      border-radius: 50px;
-      font-weight: 700;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-      z-index: 9999;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      transition: all 0.3s ease;
+        background: #fee500;
+        color: #000;
+        border-radius: 12px;
+        padding: 18px 25px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        font-size: 0.9rem;
     }
 
-    .floating-kakao:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+    /* Section Headers */
+    .section-title {
+        font-family: 'Cinzel', serif;
+        font-size: 2.5rem;
+        color: #fff;
+        margin-bottom: 50px;
     }
 
-    /* ========== CONTROLS & FOOTER ========== */
-    .top-controls {
-      display: flex;
-      justify-content: flex-end;
-      padding: 15px 20px;
-      gap: 10px;
+    .section-title::after {
+        background: var(--luxury-gradient);
+        height: 3px;
+        width: 80px;
     }
 
-    .control-btn {
-      background: #1a1a1a;
-      border: 1px solid #333;
-      color: #fff;
-      padding: 8px 16px;
-      border-radius: 4px;
-      cursor: pointer;
+    /* Typography Polish */
+    input, select, textarea {
+        background: rgba(255,255,255,0.05) !important;
+        border: 1px solid rgba(255,255,255,0.1) !important;
     }
 
-    .directions-section {
-      text-align: center;
-      margin-bottom: 60px;
-      color: var(--text-muted);
-    }
-
-    .flyer-footer {
-      text-align: center;
-      border-top: 1px solid #222;
-      padding-top: 30px;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-
-    /* ========== TOAST ========== */
-    .toast {
-      position: fixed;
-      bottom: 90px;
-      left: 50%;
-      transform: translateX(-50%) translateY(30px);
-      background: #222;
-      border: 1px solid var(--luxury-gold);
-      color: #fff;
-      padding: 12px 28px;
-      border-radius: 8px;
-      font-size: 0.95rem;
-      opacity: 0;
-      pointer-events: none;
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      z-index: 11000;
-    }
-
-    .toast.show {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
-    }
-
-    /* ========== RESPONSIVE ========== */
-    @media (max-width: 768px) {
-      .booking-form { grid-template-columns: 1fr; }
-      .span-2, .book-btn { grid-column: span 1; }
-      .salon-name { font-size: 2.3rem; }
-      .lightbox-nav { display: none; }
-    }
-
-    @media print {
-      .no-print, .floating-kakao, .lightbox-overlay, .toast,
-      #bookingSection { display: none !important; }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Floating Kakao Button -->
-  <a href="https://open.kakao.com/" target="_blank" rel="noopener noreferrer" class="floating-kakao no-print">
-    <span style="font-weight:900; background:#3c1e1e; color:#fee500; width:24px; height:24px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; font-size:12px;">K</span>
-    <span>Chat with Eva-Tigist</span>
-  </a>
-
-  <!-- Top Controls -->
-  <div class="top-controls no-print">
-    <button class="control-btn" onclick="window.print()">Print Flyer</button>
-  </div>
-
-  <div class="tilet-band"></div>
-
-  <div class="flyer-container">
-    <header class="flyer-header">
-      <h1 class="salon-name">SALINA HAIR SALON</h1>
-      <p class="tagline">\u201cBraiding Your Crown\u201d</p>
-      
-      <div class="contact-info">
-        <div class="info-card">
-          <span class="info-label">Address</span>
-          <span class="info-value">강릉교1동 (Gangneung-gyo 1-dong)</span>
-        </div>
-        <div class="info-card highlight-kakao">
-          <span class="info-label">KakaoTalk ID</span>
-          <a href="https://open.kakao.com/" target="_blank" rel="noopener noreferrer" class="info-value link-value">
-            Eva-Tigist
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <section class="heritage-intro">
-      <h2>Authentic Craftsmanship meets Modern Protective Styling</h2>
-      <p>
-        Brought to you by <strong>Eva-Tigist</strong>, Salina Hair Salon combines the rich, intricate heritage of 
-        Ethiopian braiding techniques with contemporary global protective styling. We handle your hair with elite precision.
-      </p>
-    </section>
-
-    <!-- Gallery Grid -->
-    <main class="gallery-section">
-      <h2 class="section-title">Discover Our Expert Styles</h2>
-      <div class="styles-grid" id="galleryGrid">
-        
-        <div class="style-card" data-title="Traditional Albaso & Sheruba">
-          <div class="card-image-wrapper">
-            <img src="assets/albaso_braids.png" alt="Traditional Albaso" class="gallery-image">
-          </div>
-          <div class="card-info">
-            <h3>Traditional Albaso & Sheruba</h3>
-            <p>Intricate, elegant Ethiopian cornrow designs transitioning into flowing braids.</p>
-          </div>
-        </div>
-
-        <div class="style-card" data-title="Signature Twist Braids">
-          <div class="card-image-wrapper">
-            <img src="assets/twist_braids.png" alt="Twist Braids" class="gallery-image">
-          </div>
-          <div class="card-info">
-            <h3>Signature Twist Braids</h3>
-            <p>Neat, lightweight, and glossy twists customized to your preference.</p>
-          </div>
-        </div>
-
-        <div class="style-card" data-title="Goddess Box Braids">
-          <div class="card-image-wrapper">
-            <img src="assets/goddess_braids.png" alt="Goddess Box Braids" class="gallery-image">
-          </div>
-          <div class="card-info">
-            <h3>Goddess Box Braids</h3>
-            <p>Classic box braids styled with wavy curly ends and gold metallic bead cuffs.</p>
-          </div>
-        </div>
-
-        <div class="style-card" data-title="Sleek Braided Ponytail">
-          <div class="card-image-wrapper">
-            <img src="assets/braided_ponytail.png" alt="Braided Ponytail" class="gallery-image">
-          </div>
-          <div class="card-info">
-            <h3>Sleek Braided Ponytail</h3>
-            <p>Neat cornrows swept upwards into a full, dramatic high-fashion ponytail.</p>
-          </div>
-        </div>
-
-        <div class="style-card" data-title="Fulani / Tribal Braids">
-          <div class="card-image-wrapper">
-            <img src="assets/fulani_braids.png" alt="Fulani Braids" class="gallery-image">
-          </div>
-          <div class="card-info">
-            <h3>Fulani / Tribal Braids</h3>
-            <p>Beautiful cornrows braided from back-to-front down the sides with symmetry rows.</p>
-          </div>
-        </div>
-
-        <div class="style-card" data-title="Boho Butterfly Locs">
-          <div class="card-image-wrapper">
-            <img src="assets/butterfly_locs.png" alt="Butterfly Locs" class="gallery-image">
-          </div>
-          <div class="card-info">
-            <h3>Boho Butterfly Locs</h3>
-            <p>Distressed, textured loops providing a carefree, natural protective loc layout.</p>
-          </div>
-        </div>
-
-      </div>
-    </main>
-
-    <!-- Pricing Menu -->
-    <section class="services-pricing" id="pricingSection">
-      <h2 class="section-title">Our Styling Menu</h2>
-      <div class="pricing-container">
-        <div class="pricing-list">
-          <div class="pricing-item">
-            <div class="item-header"><span class="item-name">Traditional Albaso & Sheruba</span><span class="item-price">Inquire</span></div>
-            <p class="item-desc">Custom traditional Habesha braided patterns. Prices depend on complexity.</p>
-          </div>
-          <div class="pricing-item">
-            <div class="item-header"><span class="item-name">Signature Twist / Box Braids</span><span class="item-price">from ₩120,000</span></div>
-            <p class="item-desc">Senegalese or Marley twists, custom thickness and length options.</p>
-          </div>
-          <div class="pricing-item">
-            <div class="item-header"><span class="item-name">Goddess Box Braids / Locs</span><span class="item-price">from ₩130,000</span></div>
-            <p class="item-desc">Box designs featuring loose wavy curls, raw texturing, and custom accents.</p>
-          </div>
-          <div class="pricing-item">
-            <div class="item-header"><span class="item-name">Sleek Braided Ponytail & Stitch Line</span><span class="item-price">from ₩90,000</span></div>
-            <p class="item-desc">High premium lift sweeps with precise spacing rows.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BOOKING FORM — uses Formsubmit.co (free, no signup, sends email directly) -->
-    <section class="interactive-booking no-print" id="bookingSection">
-      <h2 class="section-title">Book Your Crown Appointment</h2>
-      <p class="booking-note">Fill in your details below and tap BOOK. Your reservation will be sent directly to Eva-Tigist's email.</p>
-      
-      <form id="bookingForm" class="booking-form"
-            action="https://formsubmit.co/tigisttefera49@gmail.com"
-            method="POST">
-        
-        <!-- Formsubmit.co configuration (hidden fields) -->
-        <input type="hidden" name="_subject" value="🪮 New Booking Request — Salina Hair Salon">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" id="formNextUrl">
-
-        <div class="form-group">
-          <label for="clientName">Your Full Name</label>
-          <input type="text" id="clientName" name="Full Name" placeholder="e.g. Minji Kim" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="styleSelect">Preferred Hairstyle</label>
-          <select id="styleSelect" name="Hairstyle" required>
-            <option value="" disabled selected>Select a style...</option>
-            <option value="Traditional Albaso/Sheruba">Traditional Albaso & Sheruba</option>
-            <option value="Signature Twist Braids">Signature Twist Braids</option>
-            <option value="Goddess Box Braids">Goddess Box Braids</option>
-            <option value="Sleek Braided Ponytail">Sleek Braided Ponytail</option>
-            <option value="Fulani Tribal Braids">Fulani / Tribal Braids</option>
-            <option value="Butterfly Locs">Boho Butterfly Locs</option>
-            <option value="Jumbo Braids">Jumbo / Chunky Box Braids</option>
-            <option value="Stitch Braids">Stitch Braids</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="hairLength">Hair Length Preference</label>
-          <select id="hairLength" name="Hair Length" required>
-            <option value="" disabled selected>Select length...</option>
-            <option value="Short">Short (Chin/Neck Level)</option>
-            <option value="Medium">Medium (Shoulder/Collarbone)</option>
-            <option value="Long">Long (Mid-Back)</option>
-            <option value="Extra Long">Extra Long (Waist & Beyond)</option>
-          </select>
-        </div>
-        
-        <div class="form-group">
-          <label for="hairDensity">Your Hair Type</label>
-          <select id="hairDensity" name="Hair Type" required>
-            <option value="" disabled selected>Select volume...</option>
-            <option value="Fine/Thin">Fine / Thin Hair</option>
-            <option value="Medium">Medium Fullness</option>
-            <option value="Thick/Coarse">Very Thick / Voluminous</option>
-          </select>
-        </div>
-        
-        <div class="form-group">
-          <label for="hairColor">Extension Hair Color</label>
-          <select id="hairColor" name="Hair Color" required>
-            <option value="" disabled selected>Select color...</option>
-            <option value="Natural Black">Natural Black</option>
-            <option value="Chocolate Brown">Chocolate Brown</option>
-            <option value="Auburn">Auburn / Terracotta</option>
-            <option value="Honey Blonde">Honey Blonde</option>
-            <option value="Mixed Highlights">Mixed Highlights</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="bookingDate">Preferred Date & Time</label>
-          <input type="datetime-local" id="bookingDate" name="Preferred Date" required>
-        </div>
-
-        <div class="form-group span-2">
-          <label for="extraNotes">Special Requests or Notes</label>
-          <textarea id="extraNotes" name="Special Notes" rows="3" placeholder="Add any styling specifics, custom color matching notes, or questions here..."></textarea>
-        </div>
-        
-        <button type="submit" id="bookBtn" class="book-btn">
-          📩 BOOK
-        </button>
-      </form>
-
-      <!-- Thank You Card (shown after successful submission) -->
-      <div id="thankYouCard" class="booking-thankyou">
-        <div class="thankyou-crown">👑</div>
-        <h3>Thank You for Booking with Us!</h3>
-        <p>Your reservation request has been sent to <strong>Eva-Tigist</strong>.</p>
-        <p>She will confirm your appointment shortly via email or KakaoTalk.</p>
-        <button class="reset-btn" id="newBookingBtn">📅 Book Another Session</button>
-      </div>
-    </section>
-
-    <div class="directions-section">
-      <p>📍 <strong>Location:</strong> 강릉시 교1동 (Gangneung-si Gyo 1-dong), Gangneung, South Korea.</p>
-    </div>
-
-    <footer class="flyer-footer">
-      <p>&copy; 2026 Salina Hair Salon. All Rights Reserved. Crafted with love & culture.</p>
-    </footer>
-  </div>
-
-  <!-- Lightbox Overlay -->
-  <div id="lightbox" class="lightbox-overlay">
-    <button class="lightbox-close" aria-label="Close">&times;</button>
-    <button class="lightbox-nav prev" aria-label="Previous image">&#10094;</button>
-    <button class="lightbox-nav next" aria-label="Next image">&#10095;</button>
-    <img id="lightboxImg" src="" alt="Enlarged hairstyle view">
-    <div id="lightboxCaption" class="lightbox-caption"></div>
-  </div>
-
-  <!-- Toast -->
-  <div id="toast" class="toast no-print"></div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-
-      // ===== LIGHTBOX SYSTEM =====
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightboxImg');
-      const lightboxCaption = document.getElementById('lightboxCaption');
-      const cards = Array.from(document.querySelectorAll('.style-card'));
-      let currentIdx = 0;
-
-      const imageData = cards.map(card => ({
-        src: card.querySelector('.gallery-image').src,
-        title: card.getAttribute('data-title') || card.querySelector('h3').textContent
-      }));
-
-      function openLightbox(idx) {
-        currentIdx = idx;
-        lightboxImg.src = imageData[idx].src;
-        lightboxCaption.textContent = imageData[idx].title;
-        lightbox.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      }
-
-      function closeLightbox() {
-        lightbox.classList.remove('active');
-        document.body.style.overflow = '';
-      }
-
-      function navLightbox(dir) {
-        currentIdx = (currentIdx + dir + imageData.length) % imageData.length;
-        lightboxImg.src = imageData[currentIdx].src;
-        lightboxCaption.textContent = imageData[currentIdx].title;
-      }
-
-      // Click on any card or image to open lightbox
-      cards.forEach((card, i) => {
-        card.addEventListener('click', () => openLightbox(i));
-      });
-
-      lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
-      lightbox.querySelector('.prev').addEventListener('click', (e) => { e.stopPropagation(); navLightbox(-1); });
-      lightbox.querySelector('.next').addEventListener('click', (e) => { e.stopPropagation(); navLightbox(1); });
-      lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-
-      document.addEventListener('keydown', (e) => {
-        if (!lightbox.classList.contains('active')) return;
-        if (e.key === 'Escape') closeLightbox();
-        if (e.key === 'ArrowRight') navLightbox(1);
-        if (e.key === 'ArrowLeft') navLightbox(-1);
-      });
-
-
-      // ===== BOOKING FORM (Formsubmit.co AJAX) =====
-      const form = document.getElementById('bookingForm');
-      const thankYou = document.getElementById('thankYouCard');
-      const bookBtn = document.getElementById('bookBtn');
-      const newBookBtn = document.getElementById('newBookingBtn');
-      const toast = document.getElementById('toast');
-
-      // Set the _next URL to current page so Formsubmit doesn't redirect
-      document.getElementById('formNextUrl').value = window.location.href;
-
-      function showToast(msg) {
-        toast.textContent = msg;
-        toast.classList.add('show');
-        setTimeout(() => toast.classList.remove('show'), 4000);
-      }
-
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        // Validate
-        if (!form.checkValidity()) {
-          form.reportValidity();
-          return;
-        }
-
-        // Show loading state
-        bookBtn.textContent = 'Sending... ⏳';
-        bookBtn.disabled = true;
-
-        const formData = new FormData(form);
-
-        // Submit via AJAX to Formsubmit.co
-        fetch(form.action, {
-          method: 'POST',
-          body: formData,
-          headers: { 'Accept': 'application/json' }
-        })
-        .then(response => {
-          if (response.ok) {
-            // Success! Hide form, show thank you
-            form.style.display = 'none';
-            thankYou.classList.add('show');
-            thankYou.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          } else {
-            throw new Error('Submission failed');
-          }
-        })
-        .catch(err => {
-          console.error('Form error:', err);
-          showToast('⚠️ Something went wrong. Please try again or contact via KakaoTalk.');
-          bookBtn.textContent = '📩 BOOK';
-          bookBtn.disabled = false;
-        });
-      });
-
-      // Reset to book again
-      if (newBookBtn) {
-        newBookBtn.addEventListener('click', () => {
-          form.reset();
-          form.style.display = 'grid';
-          thankYou.classList.remove('show');
-          bookBtn.textContent = '📩 BOOK';
-          bookBtn.disabled = false;
-          form.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        });
-      }
-
-    });
-  </script>
-</body>
-</html>
+    input:focus { border-color: var(--luxury-gold) !important; }
+</style>
